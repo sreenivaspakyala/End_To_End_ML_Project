@@ -19,6 +19,18 @@ def save_object(file_path, obj):
     except Exception as err:
         logging.error('An Error has occurred while saving Object.')
         raise CustomException(err, sys)
+    
+def load_object(file_path):
+    try:
+        with open(file_path, 'rb') as file_obj:
+            model = pk.load(file_obj)
+        
+        return model
+    
+    except Exception as err:
+        logging.error('An Error has occurred while loading Object.')
+        raise CustomException(err, sys)
+
 
 def evaluate_models(x_train, y_train, x_test, y_test, models:dict, params:dict):
     result = {}
