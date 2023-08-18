@@ -31,4 +31,6 @@ with st.form('Student_Details'):
         result = round(PredictPipeline().predict_data(df)[0],2)
 
         st.write('The Predicted Math Score for the given student details is ', result, ' marks')
-        
+
+st.write('	:heart:  Developed by Sreenivas Pakyala  :heart:')
+st.write(':star: :star: Thanks for using the App :star: :star:')        
