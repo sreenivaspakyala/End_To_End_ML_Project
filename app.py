@@ -5,6 +5,7 @@ from src.pipeline.predict_pipeline import PredictPipeline, CustomData
 
 # let's create a user input page for the model prediction.
 
+st.set_page_config(page_title='Marks Predictor', page_icon=':100:')
 st.title('Welcome to Student Performance Predictor :book: :100:')
 st.text('Predict the Student performance by filling below inputs...')
 
